@@ -1,0 +1,31 @@
+spring.application.name=API_Playground
+
+spring.webclient.connect-timeout=10000
+spring.webclient.read-timeout=60000
+
+spring.codec.max-in-memory-size=16MB
+
+# 和风天气 API (https://dev.qweather.com/)
+weather.qweather.key=YOUR_QWEATHER_API_KEY
+weather.qweather.host=YOUR_QWEATHER_HOST
+
+# 俱乐部足球数据 (https://www.football-data.org/)
+football.data.api.key=YOUR_FOOTBALL_DATA_API_KEY
+football.data.base-url=https://api.football-data.org/v4
+
+# 国家队足球数据 (https://www.api-football.com/)
+api-football.key=YOUR_API_FOOTBALL_KEY
+api-football.base-url=https://v3.football.api-sports.io
+
+# 赔率数据 (https://the-odds-api.com/)
+odds.api.key=YOUR_ODDS_API_KEY
+odds.base-url=https://api.the-odds-api.com/v4
+
+logging.level.org.example.api_playground=DEBUG
+logging.level.org.springframework.web.reactive.function.client=INFO
+
+spring.datasource.url=jdbc:h2:mem:api_playground;DB_CLOSE_DELAY=-1
+spring.datasource.driver-class-name=org.h2.Driver
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.h2.console.enabled=true
